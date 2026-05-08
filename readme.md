@@ -1,6 +1,6 @@
 # Interview Transcript Summarizer
 
-A command-line tool that takes an interview transcript and produces a structured summary: topics covered, candidate profile, and a written candidate summary — powered by Groq's LLM API.
+A command-line tool that takes an interview transcript and produces a structured summary: topics covered, candidate profile, and a written candidate summary - powered by Groq's LLM API.
 
 ---
 
@@ -27,7 +27,7 @@ Create a `.env` file in the project root:
 GROQ_API_KEY=your_groq_api_key_here
 ```
 
-> ⚠️ Never commit this file. It is listed in `.gitignore`.
+> Never commit this file. It is listed in `.gitignore`.
 
 ---
 
@@ -46,11 +46,11 @@ python summarizer.py sample_transcript_assignment_2.txt --json
 ### Example output
 
 ```
-============================================================
+---
 INTERVIEW SUMMARY
-============================================================
+---
 
-📌 TOPICS COVERED
+TOPICS COVERED
 ----------------------------------------
   1. AI-assisted development workflow with Cursor and GitHub Copilot
   2. Ionic v7 mobile dashboard with responsiveness and virtual scroll
@@ -60,19 +60,19 @@ INTERVIEW SUMMARY
   6. React state management with Context API and React Query
   7. Redux slice and Zustand familiarity
 
-👤 CANDIDATE PROFILE
+CANDIDATE PROFILE
 ----------------------------------------
-  Role: Frontend/Mobile Engineer — mid-level
+  Role: Frontend/Mobile Engineer - mid-level
   Why: Prasanna has 9 years of experience focused on Angular, React,
        and Ionic with Capacitor. He showed hesitation writing Zustand
        and Redux slice code from scratch, suggesting mid-level depth.
 
-📝 CANDIDATE SUMMARY
+CANDIDATE SUMMARY
 ----------------------------------------
   Prasanna Kumar is a software developer with nine years of experience
   specializing in Angular, React, and Ionic/Capacitor...
 
-============================================================
+---
 ```
 
 ---
